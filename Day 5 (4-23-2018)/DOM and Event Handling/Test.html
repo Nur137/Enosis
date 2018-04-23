@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+
+<head>
+<script>
+    function showNum(value){
+        alert(value);
+    }
+</script>
+</head>
+
+<body>
+    <script type="text/javascript">
+       var obj = { first: 'reference' };
+       obj = { second: 'ref2' }
+        document.write(obj.first);
+        var num=showNum;
+        document.write(num(5));
+    </script>
+</body>
+
+</html>

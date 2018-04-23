@@ -1,0 +1,122 @@
+# JavaScript allows to work with three primitive data types −
+1. Numbers, eg. 123, 120.50 etc.
+2. Strings of text e.g. "This text string" etc.
+3. Boolean e.g. true or false.
+
+# JavaScript also defines two trivial data types, null and undefined, each of which defines only a single value.
+# JavaScript represents numbers using the 64-bit floating-point format defined by the IEEE 754 standard.
+# JavaScript is untyped language. This means that a JavaScript variable can hold a value of any data type.
+
+# Within the body of a function, a local variable takes precedence over a global variable with the same name. If you declare a local 
+# variable or function parameter with the same name as a global variable, you effectively hide the global variable.
+
+# Javascript is case sensitive.
+
+# Conditional Operator (? :)
+result = (condition) ? ifTrueStatement : ifFalseStatement
+
+# to get type of a variable 
+typeof varName
+
+
+# if-else
+if (expression){
+   Statement(s) to be executed if expression is true
+}
+
+else{
+   Statement(s) to be executed if expression is false
+}
+
+# switch
+switch (expression)
+{
+   case condition1: statement(s)
+   break;
+   
+   case condition2: statement(s)
+   break;
+   .
+   .
+   .
+   case conditionN: statement(s)
+   break;
+   
+   default: statement(s)
+}
+# If we do not use break after each case then all statement after that particular case will execute before getting break or end of switch
+# To Check multiple case
+switch (expression)
+{
+   case condition1: 
+   case condition2: 
+        statement(s);
+        break;
+   .
+   .
+   .
+}
+
+# while-loop
+while (expression){
+   Statement(s) to be executed if expression is true
+}
+
+# do-while loop
+do{
+   Statement(s) to be executed;
+} while (expression);
+
+# for-loop
+for (initialization; test condition; iteration statement){
+   Statement(s) to be executed if test condition is true
+}
+
+# Debugging
+# Open Dev tools by pressing Cntrl+Shift+J
+# Select Sources tab
+
+# Event
+JavaScript's interaction with HTML is handled through events that occur when the user or the browser manipulates a page.
+When the page loads, it is called an event.
+
+# Events are a part of the Document Object Model (DOM) Level 3 and every HTML element contains a set of events which can trigger JavaScript Code.
+Some Events:
+1. onclick
+2. onsubmit
+3. onmouseover 
+4. onmouseout
+
+# Cookie
+Cookies are a plain text data record of 5 variable-length fields −
+1. Expires − The date the cookie will expire. If this is blank, the cookie will expire when the visitor quits the browser.
+2. Domain − The domain name of your site.
+3. Path − The path to the directory or web page that set the cookie. This may be blank if you want to retrieve the cookie from any directory or page.
+4. Secure − If this field contains the word "secure", then the cookie may only be retrieved with a secure server. If this field is blank, no such restriction exists.
+5. Name = Value − Cookies are set and retrieved in the form of key-value pairs
+
+
+#Page Redirect
+1. to go to a specific page: 
+   windows.location(url);
+2. timeOut for calling a function:
+   setTimeout( 'functionName()' ,timeInMilisecond);
+3. to get browserName:
+   var browsername=navigator.appName;
+
+# Dialogue Boxes
+1. Alert Dialog Box
+   alert ("AlertMessage");
+2. Confirm Dialogue Box
+3. Prompt Dialogue Box
+
+
+#string
+string.substr(beginIndex,length)
+
+# Closure
+A closure is the combination of a function and the lexical environment within which that function was declared.
+## Lexical Scoping 
+1. Inner functions have access to the variables of outer functions.
+2. Lexical scoping describes how a parser resolves variable names when functions are nested. 
+

@@ -1,0 +1,39 @@
+/* "*" (All) Selector */
+*{
+	font-weight: bold;
+}
+/* unvisited link */
+a:link {
+    color: blue;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: orange;
+}
+
+/* Adjacent Selector*/
+div#A + div#B{
+	color:blue;
+
+}
+
+/* Descendant Selector*/
+div#A p{
+	text-decoration: underline;
+}
+
+ul:first-of-type {
+   color: orange;
+}
+

@@ -1,0 +1,29 @@
+//Defining multiple class in a single tag. Using space
+<div class="class1 class2">
+.
+.
+.
+</div>
+
+// (Concept of Specificity) In style if there is multiple classes and ids and multiple block refers one block
+// If contains Style in the block, then most priority
+Priority is determined by styles*1000+ numberOfIds*100 + numberOfClasses*10+ numberOfElements
+
+// If priority is same last one is executed
+
+// !important is used to eleminate Specificity effect. If multiple blocks conatains !important, then the blocks containing !important will be go under 
+//priority resolving process.
+
+// The universal selector (*) has no specificity value (0,0,0,0)
+
+#Important Notes
+1.  The universal selector (*) has no specificity value (0,0,0,0).
+2.  Pseudo-elements (e.g. :first-line) get 0,0,0,1 unlike their psuedo-class brethren which get 0,0,1,0.
+3.  The pseudo-class :not() adds no specificity by itself, only what's inside it's parentheses.
+4.  The !important value appended a CSS property value is an automatic win. It overrides even inline styles from the markup. The only way an !important value 
+    can be overridden is with another !important rule declared later in the CSS and with equal or great specificity value otherwise. You could think of it as 
+    adding 1,0,0,0,0 to the specificity value.
+
+
+// For learning flexbox;
+https://www.youtube.com/watch?v=JJSoEo8JSnc

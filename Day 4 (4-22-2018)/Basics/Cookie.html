@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html>
+   <head>
+      
+      <script type = "text/javascript">
+
+            function WriteCookie()
+            {
+               var now = new Date();
+               now.setMonth( now.getMonth() + 1 );
+               cookievalue = escape(document.myForm.customer.value) + ";"
+               
+               document.cookie="abc=" + cookievalue;
+               timeValue = now.toUTCString() + ";";
+               document.cookie = "expires=" + timeValue;
+               
+               document.write("Setting Cookies : " + "name=" + unescape(cookievalue) );
+               document.write("</br>");
+               document.write ("All Cookies are : " + document.cookie );
+            }
+
+
+
+            function ReadCookie()
+            {
+               var allcookies = document.cookie;
+               document.write ("All Cookies : " + allcookies );
+               
+               // Get all the cookies pairs in an array
+               cookiearray = allcookies.split(';');
+               
+               // Now take key value pair out of this array
+               for(var i=0; i<cookiearray.length; i++){
+                  name = cookiearray[i].split('=')[0];
+                  value = cookiearray[i].split('=')[1];
+                  document.write ("Key is : " + name + " and Value is : " + value);
+               }
+            }
+      </script>
+      
+   </head>
+   
+   <body>
+      <script>
+          document.write("Cookies are: "+document.cookie);
+      </script>
+      <form name="myForm" action="">
+         Enter name: <input type="text" name="customer"/>
+         <input type="button" value="Set Cookie" onclick="WriteCookie();"/>
+      </form>
+   
+   </body>
+</html>

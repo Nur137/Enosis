@@ -1,0 +1,29 @@
+Flexbox:
+    A CSS3 layout mode that provides an easy and clean way to arrange items within a container.
+
+Features:
+    1. No Floats.
+    2. Responsive and mobile frinedly.
+    3. Positioning child elements is MUCH easier.
+    4. Flex container's margins do not collapse with the margins of its contents.
+    5. Order of elements can easily be changed without editing the source HTML.
+
+Flexible box model concept:
+    1. The ability to alter item width and height to best fit in its containers
+    2. Available free space.
+    3. Flexbox is direction-agnostic.
+    4. Built for small-scale layouts while the upcoming "Grid" specification is for more large scale.
+
+Flex Properties:
+    1. display: flex | inline-flex;
+    2. flex-direction: row | column;
+    3. flex-wrap: wrap | nowrap | wrapreverse;
+    4. flex-basis: <length>;
+    5. justify-content: flex-start(by default) | flex-end | space-between(no margin around side) | space-around(margin around side);
+    6. align-self: auto | flex-start | flex-end | center | baseline | stretch;
+    7. align-items: flex-start | flex-end | center | stretch(by default);
+    8. align-content: flex-start | flex-end | center;
+    9. flex-grow: <number>;
+    10.flex-shrink: <number>; 
+    11.flex: <integer>;
+    12.order: <integer>;    

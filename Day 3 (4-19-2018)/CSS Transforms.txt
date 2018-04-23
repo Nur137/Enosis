@@ -1,0 +1,60 @@
+
+CSS 2D Transforms:
+1. translate()
+   --- transform: translate(x px,y px); (x,y) is the mew co-oridinate.
+2. rotate()
+   --- transform: rotate(xdeg); (x,y) roatates x degree.
+3. scale()
+   --- The scale() method increases or decreases the size of an element (according to the parameters given for the width and height).
+4. skewX()
+   --- The skewX() method skews an element along the X-axis by the given angle.
+5. skewY()
+   --- The skewY() method skews an element along the Y-axis by the given angle.
+6. skew()
+   --- The skew() method skews an element along the X and Y-axis by the given angles.
+7. matrix()
+   --- matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())
+
+
+CSS 3D Transforms:
+1. matrix3d(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n)	
+   --- Defines a 3D transformation, using a 4x4 matrix of 16 values.
+2. translate3d(x,y,z)	
+   --- Defines a 3D translation.
+3. translateX(x)	
+   --- Defines a 3D translation, using only the value for the X-axis.
+4. translateY(y)	
+   --- Defines a 3D translation, using only the value for the Y-axis.
+5. translateZ(z)	
+   --- Defines a 3D translation, using only the value for the Z-axis.
+6. scale3d(x,y,z)	
+   --- Defines a 3D scale transformation.
+7. scaleX(x)	
+   --- Defines a 3D scale transformation by giving a value for the X-axis.
+8. scaleY(y)	
+   --- Defines a 3D scale transformation by giving a value for the Y-axis.
+9. scaleZ(z)	
+   --- Defines a 3D scale transformation by giving a value for the Z-axis.
+10.rotate3d(x,y,z,angle)	
+   --- Defines a 3D rotation
+11.rotateX()
+   --- The rotateX() method rotates an element around its X-axis at a given degree.
+12.rotateY()
+   --- The rotateY() method rotates an element around its Y-axis at a given degree.
+13.rotateZ()
+   --- The rotateY() method rotates an element around its Z-axis at a given degree.
+
+
+Properties
+1. transform	
+   --- Applies a 2D or 3D transformation to an element.
+2. transform-origin	
+   --- Allows you to change the position on transformed elements.
+3. transform-style	
+   --- Specifies how nested elements are rendered in 3D space.
+4. perspective	
+   --- Specifies the perspective on how 3D elements are viewed.
+5. perspective-origin	
+   --- Specifies the bottom position of 3D elements.
+6. backface-visibility	
+   --- Defines whether or not an element should be visible when not facing the screen.

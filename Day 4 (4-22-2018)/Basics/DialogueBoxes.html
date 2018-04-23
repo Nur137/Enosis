@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<script type="text/javascript">
+       function getConfirmation(){
+          var retVal = confirm("Do you want to continue ?");
+          if( retVal == true ){
+             document.write ("User wants to continue!");
+             return true;
+          }
+          else{
+             document.write ("User does not want to continue!");
+             return false;
+          }
+       }
+       function getValue(){
+               var retVal = prompt("Enter your name : ", "");
+               document.write("You have entered : " + retVal);
+            }
+ </script>
+</head>
+
+<body>
+    <P>Click Here!! </P>
+    <form>
+    <!-- <input type="button" value="Open Dialogue Box" onclick="getConfirmation()"/> -->
+    <input type="button" value="Prompt" onclick="javascript:void(alert('ABCXYZ'))"/>
+    </form>
+
+</body>
+ </html>

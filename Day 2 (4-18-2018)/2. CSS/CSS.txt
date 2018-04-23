@@ -1,0 +1,31 @@
+How does CSS affect HTML?
+Web browsers apply CSS rules to a document to affect how they are displayed. A CSS rule is formed from:
+1. A set of properties, which have values set to update how the HTML content is displayed, for example I want my element's width to be 50% of its parent element, and its background to be red.
+2. A selector, which selects the element(s) you want to apply the updated property values to. For example, I want to apply my CSS rule to all the paragraphs in my HTML document.
+
+
+Difference between ID and class:
+The difference between an ID and a class is that an ID can be used to identify one element, whereas a class can be used to identify more than one.
+
+
+Why use id instead of class?
+IDs are usually used when you need to reference that element in JavaScript, so if you were looking to fade out a div when a button is clicked the div and button would get IDs instead of classes. So I use IDs for reference and classes for styling ... most of the time.
+
+
+CSS is of 3 kinds:
+1. Inline CSS
+2. Internal CSS
+3. External CSS
+
+CSS Layout - The position Property
+There are five different position values:
+1. static
+   --- Static positioned elements are not affected by the top, bottom, left, and right properties. Always positioned according to the normal flow of the page.
+2. relative
+   --- Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. 
+3. fixed
+   --- Always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+4. absolute
+   --- An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+5. sticky 
+   ---A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).

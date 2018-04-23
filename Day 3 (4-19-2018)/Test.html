@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            div#divId.divClass p.p1Class.p2Class{
+                color:red !important;
+            }
+
+            div#divId.divClass p#pId{
+                color:green;
+            }
+
+            div#divId.divClass p#pId.p1Class{
+                color:black;
+            }
+
+        
+        </style>
+    </head>
+
+    <body>
+        <div id="divId" class="divClass">
+            <p id="pId" class="p1Class p2Class" >
+                Something
+            </p>
+        </div>
+    </body>
+</html>

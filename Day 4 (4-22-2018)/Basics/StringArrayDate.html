@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+<head>
+    <script type="text/javascript">
+    </script>
+</head>
+
+<body>
+    <script>
+        var stringVal = "Hello";
+        document.write(stringVal.charAt(1));
+        document.write("</br>");
+        document.write(stringVal.charCodeAt(1));
+        document.write("</br>");
+        document.write(stringVal.toUpperCase());
+        document.write("</br>");
+        document.write(stringVal.toLowerCase());
+        document.write("</br>");
+        stringVal = stringVal.concat(" Nur", " Imtiazul ", "Haque");
+        document.write(stringVal);
+        document.write("</br>");
+        var str = "Apples are round, and apples are juicy.";
+        var sliced = str.slice(4, -6);
+        document.write(sliced);
+        document.write("</br>");
+
+        document.write("(1,2): " + str.substr(1, 2));
+        document.write("<br />(-2,2): " + str.substr(-2, 2));
+        document.write("<br />(1): " + str.substr(1));
+        document.write("<br />(-20, 2): " + str.substr(-20, 2));
+        document.write("<br />(20, 2): " + str.substr(20, 2));
+
+        str = "Apples are round, and apples are juicy.";
+
+        document.write("(1,2): " + str.substring(1, 2));
+        document.write("<br />(0,10): " + str.substring(0, 10));
+        document.write("<br />(5): " + str.substring(5));
+
+        // var arr = new Array(4, 5, 6, 7).indexOf(5);
+        // document.write("index of 8 " + arr);
+        // function init() {
+        //     var name = 'Mozilla'; // name is a local variable created by init
+        //     function displayName() { // displayName() is the inner function, a closure
+        //         alert(name); // use variable declared in the parent function    
+        //     }
+        //     displayName();
+        // }
+        // init();
+
+
+        // function makeFunc() {
+        //     var name = 'Mozilla';
+        //     function displayName() {
+        //         alert(name);
+        //     }
+        //     return displayName;
+        // }
+
+        // var myFunc = makeFunc();
+        // myFunc();
+
+        function makeAdder(x) {
+            return function (y) {
+                return x + y;
+            };
+        }
+
+        var add5 = makeAdder(5);
+        var add10 = makeAdder(10);
+
+        document.write(add5(2));  // 7
+        document.write(add10(2)); // 12
+    </script>
+</body>
+
+</html>

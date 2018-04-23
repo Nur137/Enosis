@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+
+<head>
+    <style>
+        div {
+            position: relative;
+            height: 300px;
+            width: 300px;
+            color: red;
+            padding: 20px;
+            border: 10px solid blue;
+            margin: 0;
+            top: 0;
+            left: 0;
+            Content: "Hello Nur";
+            /* transform: rotate(20deg); */
+            /* transform: translate(400px,500px) rotate(20deg);*/
+            /* transform: skewY(20deg);  */
+            /* transform: scale(2); */
+            transform: perspective( 400px ) rotateY( 45deg );
+        }
+        .fixed{
+            position: fixed;
+            height: 300px;
+            width: 300px;
+            color: green;
+            padding: 20px;
+            border: 10px solid red;
+            margin: 0;
+            top: 50px;
+            left: 50px;
+            Content: "Hello Nur";
+            
+        }
+        .abs{
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            color: green;
+            padding: 20px;
+            border: 10px solid red;
+            margin: 0;
+        
+            Content: "Hello Nur";
+            
+        }
+        .extra{
+            left:100px;
+        }
+    </style>
+</head>
+
+<body style="background-color:white;">
+    <!-- Box Model and Positionaing
+    <div>Hello
+    </div>
+
+    <div class="extra">
+        XXXX
+    </div>
+
+    <div class="fixed">
+        hello
+    </div>
+
+    <div>Hello
+    </div>
+    <div>Hello
+    </div>
+    <div class="abs">
+        ABS
+    </div>
+
+    -->
+
+    <!---->
+    <div>
+        Hello
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+
+<head>
+    <script type="text/javascript">
+        function makeSizer(size) {
+            return function () {
+                document.body.style.fontSize = size + 'px';
+            };
+        }
+        function helloFunction() {
+            alert("Hello");
+        }
+
+        var count = (function () {
+            var privateCounter = 0;
+            function changeBy(val) {
+                privateCounter += val;
+            }
+            return {
+                increment: function () {
+                    changeBy(1);
+                },
+                decrement: function () {
+                    changeBy(-1);
+                },
+                value: function () {
+                    return privateCounter;
+                }
+            };
+        })();
+        document.write("</br>");
+        document.write("Value of count " + count.value());
+        document.write("</br>");
+        count.increment();
+        document.write("Value of count " + count.value());
+        document.write("</br>");
+        count.increment();
+        document.write("Value of count " + count.value());
+        
+        document.write("</br>");
+        count.decrement()
+        document.write("Value of count " + count.value());
+
+        document.write("</br>");
+        count.decrement()
+        document.write("Value of count " + count.privateCounter);
+
+
+        function sum(a){
+            return function(b){
+                    return function(c){
+                            return a+b+c;
+                        }
+                    }
+        }
+        document.write(sum(2)(3)(5));
+
+    </script>
+
+    <style>
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 12px;
+        }
+
+        h1 {
+            font-size: 1.5em;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <p>Some paragraph text</p>
+    <h1>some heading 1 text</h1>
+    <h2>some heading 2 text</h2>
+
+    <a href="#" id="size-12">12</a>
+    <a href="#" id="size-14">14</a>
+    <a href="#" id="size-16">16</a>
+
+    <script>
+        var size12 = makeSizer(12);
+        var size14 = makeSizer(14);
+        var size16 = makeSizer(16);
+        document.getElementById('size-12').onclick = size12;
+        document.getElementById('size-14').onclick = size14;
+        document.getElementById('size-16').onclick = size16;
+    </script>
+</body>
+
+</html>

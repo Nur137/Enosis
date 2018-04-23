@@ -1,0 +1,49 @@
+# Javascript has 5 data types that are passed by value:
+1. Boolean
+2. null
+3. undefined
+4. String
+5. Number
+
+# Javascript has 3 data types that are passed by reference: 
+1. Array
+2. Function
+3. Object
+
+# JavaScript HTML DOM
+When a web page is loaded, the browser creates a Document Object Model (DOM) of the page.
+
+# getElementsByClassName
+getElementsByClassName(className)[index] index is must
+
+# querySelectorAll()
+querySelectorAll(tagName).length --> return of Number of tags (tagName) 
+querySelectorAll(tagName)[index].innerHTML --> returns of tag (tagName) content of index.
+
+
+# removeChild() 
+
+# createElement
+# createTextNode
+# appendChild(child)
+# replaceChild(child)
+# insertBefore(new,existing)
+# addEventListener(event, function)
+
+# attributes
+1. onmouseover
+2. onmouseout
+
+
+# Bubbling & Capturing
+addEventListener(event, function, useCapture);
+if useCapture=false then Bubbling 
+else Capturing 
+<div>
+<p> </p>
+</div>
+In bubbling the inner most element's event is handled first and then the outer: the <p> element's click event is handled first, 
+then the <div> element's click event.
+
+In capturing the outer most element's event is handled first and then the inner: the <div> element's click event will be handled first,
+then the <p> element's click event.
