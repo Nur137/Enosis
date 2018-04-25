@@ -1,0 +1,13 @@
+input,select{
+    margin-top: 20px;
+    
+}
+
+#divId{
+    width: 20%;
+    background-color: #F1F1F1;
+    margin-left: 40%;
+    padding: 10px;
+    border: 1px solid black;
+    margin-top: 100px;
+}
