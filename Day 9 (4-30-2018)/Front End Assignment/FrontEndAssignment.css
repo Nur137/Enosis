@@ -1,0 +1,145 @@
+body{
+    background-color:#272727;
+}
+
+/* navbar portion */
+#navbar{
+    background-color: #199686;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    left:0;
+    top:0;
+    overflow-y: scroll;
+}
+#nav-img{
+    width: 50px;
+    height: 50px;
+}
+
+#autocomplete-search{
+    width: 150px;
+    height: 15px;
+    color: black;
+    background-color:white;
+    margin: 0px;
+    position: absolute;
+    top:10px;
+}
+
+#autocomplete-search-button{
+    left: 210px;
+    top: 10px;
+    width: 60px;
+    color: white;
+    background-color: #199686;
+    border: 1px solid white;
+    font-size: 12px;
+    position: absolute;
+}
+
+#autocomplete-search-show-all-button{
+    
+    left: 275px;
+    top: 10px;
+    width: 90px;
+    color: white;
+    background-color: #199686;
+    border: 1px solid white;
+    font-size: 12px;
+    position: absolute;
+}
+
+
+/* Form Section*/
+#tourist-img{
+    position: absolute;
+    top:20px;
+    left:20px;
+    border: 1px solid white;
+    width:97px;
+    height:97px; 
+}
+
+#select-image{
+    margin-left: 5px;
+}
+
+
+#formDiv{
+    border:1px solid white; 
+    position: absolute;
+    width: 30%;
+    height: 300px;
+    top:120px;
+    left:20px;
+    background:#272727;
+    padding: 10px;
+    padding-top: 115px;
+}
+
+
+label{
+    color:white;
+    font-weight: normal;
+    font-size:20px; 
+    margin-left: 10px;
+}
+
+input,select{
+    width: 92%;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    background-color:  #272727;
+    padding:5px;
+    color: white;
+}
+select{
+    width:95%;
+}
+
+input[type="submit"]{
+    background-color: #199686;
+    width:95%;
+}
+
+/* Table Section */
+table{
+    position: absolute;
+    width: 40%;
+    height: auto;
+    top:120px;
+    left:50%;  
+    color: white;
+    background-color: #199686;
+    border: 1px solid white;
+    border-collapse: collapse;
+    font-size: 18px;
+    padding: 5px;
+}
+
+th,td{
+    padding: 5px;
+    border: 1px solid white;
+    text-align:left;
+    vertical-align:top;
+}
+
+td{
+    background-color: #272727;
+}
+
+#table-image{
+    width:50px;
+    height:50px;
+
+}
+
+button{
+    width: 50px;
+    height: 30px;
+    margin-left:5px;
+    font-size: 10px; 
+}
