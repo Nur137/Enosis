@@ -1,0 +1,111 @@
+body{
+    background-color:#272727;
+}
+
+/* navbar portion */
+#navbar{
+    background-color: #199686;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    left:0;
+    top:0;
+}
+#nav-img{
+    width: 50px;
+    height: 50px;
+}
+
+#autocomplete-search{
+    width: 150px;
+    height: 30px;
+    color: black;
+    background-color:white;
+    margin: 0px;
+    position: absolute;
+    top:10px;
+}
+
+#autocomplete-search-button{
+    left: 210px;
+    top: 10px;
+    width: 60px;
+    color: white;
+    background-color: #199686;
+    border: 1px solid white;
+    font-size: 12px;
+    position: absolute;
+}
+
+#autocomplete-search-show-all-button{
+    
+    left: 275px;
+    top: 10px;
+    width: 90px;
+    color: white;
+    background-color: #199686;
+    border: 1px solid white;
+    font-size: 12px;
+    position: absolute;
+}
+
+
+/* Form Section*/
+
+
+#formDiv{
+    border:1px solid white; 
+    position: absolute;
+    width: 25%;
+    top:120px;
+    left:20px;
+    background:#272727;
+    padding: 10px;
+}
+label,input{
+    color: wheat;
+}
+
+
+
+/* Table Section */
+#dynamicTable{
+    position: absolute;
+    width: 40%;
+    height: auto;
+    top:120px;
+    left:50%;  
+    color: white;
+    background-color: #199686;
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+th,td{
+    padding: 5px;
+    border: 1px solid white;
+    text-align:left;
+    vertical-align:top;
+}
+
+td{
+    background-color: #272727;
+}
+
+#table-image{
+    width:60px;
+    height:60px;
+    align-content: center;
+}
+
+button{
+    width: 50px;
+    height: 30px;
+    margin-left:5px;
+    font-size: 10px; 
+}
+
+.checked {
+    color: orange;
+}
